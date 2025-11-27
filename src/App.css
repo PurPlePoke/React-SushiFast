@@ -50,3 +50,31 @@
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15) !important;
 }
+
+/* Menu card rotation effect */
+.menu-card {
+  transition: all 0.3s ease;
+}
+
+.menu-card:hover {
+  transform: rotate(0deg) !important;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card-img {
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .menu-card-img {
+  transform: scale(1.1);
+}
+
+/* Button hover effect */
+.btn-danger {
+  transition: all 0.3s ease;
+}
+
+.btn-danger:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(220, 53, 69, 0.4) !important;
+}

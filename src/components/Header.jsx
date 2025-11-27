@@ -1,13 +1,15 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
+import { useCart } from '../hooks/useCart'
 
 function Header() {
+  const { count } = useCart();
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
       <div className="container">
         <Link className="navbar-brand fw-bold d-flex align-items-center" to="/">
           <img src={logo} alt="SushiFast Logo" height="40" className="me-2" />
-          <span style={{ fontFamily: "'Whisper', cursive", fontSize: '1.5rem' }}>SushiFast</span>
+          <span style={{ fontFamily: "'Satisfy', cursive", fontSize: '1.5rem' }}>SushiFast</span>
         </Link>
         <button 
           className="navbar-toggler" 
@@ -35,8 +37,9 @@ function Header() {
               <Link className="nav-link" to="/contact">Contact</Link>
             </li>
             <li className="nav-item">
-              <Link className="btn btn-danger text-white ms-2" to="/panier">
-                Panier
+              <Link className="btn btn-danger text-white ms-2 d-flex align-items-center" to="/panier">
+                <span>Panier</span>
+                <span className="badge bg-light text-dark ms-2">{count}</span>
               </Link>
             </li>
           </ul>
