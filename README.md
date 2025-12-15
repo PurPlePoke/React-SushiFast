@@ -144,19 +144,9 @@ Le panier est automatiquement sauvegardé dans `localStorage` sous la clé `sush
 ✅ **Performance optimisée** avec Vite et lazy loading  
 ✅ **Code propre** sans émojis hardcodés  
 
-##  Améliorations Futures
-
-- [ ] Intégration Stripe/PayPal pour paiement
-- [ ] Système d'authentification utilisateur
-- [ ] Historique des commandes
-- [ ] Avis et notations des produits
-- [ ] Recommandations personnalisées
-- [ ] API backend Node.js/Express
-- [ ] Base de données (MongoDB/PostgreSQL)
-
 ##  Auteur
 
-Projet développé dans le cadre du cours **R506 - Développement Front Avancé**  
+Projet développé dans le cadre du cours **R506 - Développement Front Avancé** par Killian LAWSON et Adrien PREVOST 
 Année : 2024-2025
 
 ##  License
